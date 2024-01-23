@@ -42,6 +42,7 @@ module.exports =  withLess({
     ...nextConfig,
     lessLoaderOptions: {
       lessOptions: {
+        modifyVars: {//
           'primary-color': '#38393C',
           'secondary-color': '#242629',
           'accent-color': '#FFB500',

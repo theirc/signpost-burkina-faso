@@ -50,7 +50,7 @@ export const CATEGORIES_TO_HIDE: number[] = [
 // Keep in sync with locales configured in /next.config.js.
 export const DYNAMIC_CONTENT_LOCALES: { [key: string]: number } = {
   'en-us': 1, // English locale id
-  // TODO: Add any other IDs needed
+  fr: 16,
 };
 
 export const ZENDESK_AUTH_HEADER = {
@@ -90,5 +90,5 @@ export const SEARCH_RESULTS_PAGE_INDEX: AlgoliaSearchIndex = {
 };
 
 export const DIRECTUS_AUTH_TOKEN = process.env.DIRECTUS_TOKEN ?? '';
-export const DIRECTUS_COUNTRY_ID = 0; // TODO: replace with the country ID from directus
-export const DIRECTUS_INSTANCE = ''; // TODO: add the url from the directus instance you want to fetch data from
+export const DIRECTUS_COUNTRY_ID = 29; // TODO: replace with the country ID from directus
+export const DIRECTUS_INSTANCE = 'https://directus-irc.azurewebsites.net/'; // TODO: add the url from the directus instance you want to fetch data from

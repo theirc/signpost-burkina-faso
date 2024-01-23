@@ -38,8 +38,7 @@ const nextConfig = {
   },
 };
 
-module.exports = withPWA(
-  withLess({
+module.exports =  withLess({
     ...nextConfig,
     lessLoaderOptions: {
       lessOptions: {
@@ -86,5 +85,5 @@ module.exports = withPWA(
         },
       },
     },
-  })
+  }
 );

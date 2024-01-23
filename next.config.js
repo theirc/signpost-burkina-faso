@@ -1,7 +1,5 @@
 const withLess = require('next-with-less');
 const pack = require('./package.json');
-const withPWA = require('next-pwa')({ dest: 'public' });
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,

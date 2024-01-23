@@ -25,7 +25,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'signpost-niger.zendesk.com',
+        hostname: 'signpost-burkina.zendesk.com',
       },
       {
         protocol: 'https',

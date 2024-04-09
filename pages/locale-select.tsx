@@ -13,7 +13,10 @@ const langs: Lang[] = [
     langShort: 'en-us',
     langLong: 'English',
   },
-  // TODO: Add supported languages.
+  {
+    langShort: 'fr',
+    langLong: 'Français',
+  },
 ];
 
 /** The locale selection page.
@@ -31,7 +34,7 @@ export default function LocaleSelectPage() {
   return (
     <LocaleSelectPageBase
       siteTitle={SITE_TITLE}
-      message={'Please choose your preferred language'}
+      message={'Sélectionnez votre langue'}
       langs={langs}
       image={<span>TODO</span>}
     />

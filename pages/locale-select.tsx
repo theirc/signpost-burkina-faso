@@ -10,8 +10,8 @@ import { SITE_TITLE } from '../lib/constants';
 
 const langs: Lang[] = [
   {
-    langShort: 'en-us',
-    langLong: 'English',
+    langShort: 'fr',
+    langLong: 'Français',
   },
 ];
 

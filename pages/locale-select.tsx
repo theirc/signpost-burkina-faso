@@ -1,19 +1,17 @@
-// This module implements a locale selection page.
-//
-// This page accepts an optional target pathname as a query parameter. It
-// displays a page that redirects to the pathname in the selected locale.
 import { default as LocaleSelectPageBase } from '@ircsignpost/signpost-base/dist/src/locale-select-page';
 import type { Lang } from '@ircsignpost/signpost-base/dist/src/locale-select-page';
 import Image from 'next/image';
 
 import { SITE_TITLE } from '../lib/constants';
 
+// Import the image from the public folder
+import KibaruImage from '../public/Kibaru_white yellow.png';
+
 const langs: Lang[] = [
   {
-    langShort: 'en-us',
-    langLong: 'English',
+    langShort: 'fr',
+    langLong: 'Français',
   },
-  // TODO: Add supported languages.
 ];
 
 /** The locale selection page.
@@ -31,9 +29,10 @@ export default function LocaleSelectPage() {
   return (
     <LocaleSelectPageBase
       siteTitle={SITE_TITLE}
-      message={'Please choose your preferred language'}
+      message={'Sélectionnez votre langue'}
       langs={langs}
-      image={<span>TODO</span>}
+      // Use the Image component from next/image
+      image={<Image src={KibaruImage} alt="Locale Selection Image" />}
     />
   );
 }

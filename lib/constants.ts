@@ -10,7 +10,7 @@ export const REVALIDATION_TIMEOUT_SECONDS: number = 1 * 60 * 60;
 // The "about us" article ID.
 //
 // TODO
-export const ABOUT_US_ARTICLE_ID: number = 18071062526621;
+export const ABOUT_US_ARTICLE_ID: number = 18095000864285;
 
 // The information hierary of the website.
 // Set to true for the category -> section -> article hierarchy, similar to that of United for Ukraine.

@@ -13,7 +13,6 @@ export interface SocialMediaLink {
 // Serializable social media links
 export interface SocialMediaLinks {
   facebookLink: SocialMediaLink;
-  whatsappLink: SocialMediaLink;
   messengerLink: SocialMediaLink;
 }
 
@@ -30,10 +29,6 @@ export function getSocialMediaProps(
     {
       ...socialMediaLinks.facebookLink,
       image: facebookImage,
-    },
-    {
-      ...socialMediaLinks.whatsappLink,
-      image: whatsappImage,
     },
     {
       ...socialMediaLinks.messengerLink,
